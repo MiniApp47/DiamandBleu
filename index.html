@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr" data-region="idf">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#050a16">
+  <meta name="description" content="Diamant Bleu · Maison de sélection. Une expérience shopping d'exception.">
+  <title>DIAMANT BLEU · Maison de sélection</title>
+  <link id="site-icon" rel="icon" href="assets/diamant-idf.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=luxe2">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="script.js?v=luxe2" defer></script>
+</head>
+<body class="region-locked">
+  <!-- PROLOGUE : une ouverture cinématique, puis le choix des boutiques. -->
+  <section id="opening-cinema" class="opening-cinema" aria-label="Ouverture de la Maison Diamant Bleu">
+    <div class="cinema-grain" aria-hidden="true"></div>
+    <div class="cinema-stars" id="cinema-stars" aria-hidden="true"></div>
+    <div class="cinema-horizon" aria-hidden="true"></div>
+    <div class="cinema-ring ring-one" aria-hidden="true"></div>
+    <div class="cinema-ring ring-two" aria-hidden="true"></div>
+    <div class="cinema-diamond" aria-hidden="true"><div class="cinema-diamond-core"></div></div>
+    <div class="cinema-wordmark"><span>LA MAISON</span><strong>DIAMANT <em>BLEU</em></strong><small>UNE SIGNATURE · DEUX UNIVERS</small></div>
+    <div class="cinema-bottom"><span>✦ L’EXCELLENCE A UN NOM ✦</span><span class="cinema-track"><i></i></span></div>
+    <button type="button" id="skip-cinema" class="skip-cinema" aria-label="Passer l'animation d'ouverture">PASSER L'INTRO <span>↗</span></button>
+  </section>
+  <div id="region-gate" class="region-gate" role="dialog" aria-modal="true" aria-label="Choisissez votre boutique">
+    <div class="gate-orbit" aria-hidden="true"></div><div class="gate-glow" aria-hidden="true"></div>
+    <div class="gate-stars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="gate-lightline" aria-hidden="true"></div>
+    <div class="gate-inner">
+      <span class="gate-kicker">✦　LA MAISON DIAMANT BLEU　✦</span>
+      <div class="gate-gem" aria-hidden="true"><span>◆</span></div>
+      <h1 class="gate-title">Deux régions.<br><em>Une signature.</em></h1>
+      <p class="gate-intro">Choisissez votre univers pour découvrir la sélection de votre région.</p>
+      <div class="region-options">
+        <button class="region-option region-idf" data-select-region="idf" aria-label="Entrer dans Diamant Bleu Île-de-France">
+          <span class="region-image"><img src="assets/diamant-idf.jpg" alt="Logo Diamant Bleu IDF"><i class="region-sheen" aria-hidden="true"></i></span>
+          <span class="region-copy"><small>PARIS · ÎLE-DE-FRANCE</small><strong>DIAMANT BLEU</strong><span>ÎLE-DE-FRANCE</span><b>ENTRER DANS LA BOUTIQUE　↗</b></span>
+        </button>
+        <button class="region-option region-bretagne" data-select-region="bretagne" aria-label="Entrer dans Diamant Bleu Bretagne">
+          <span class="region-image"><img src="assets/diamant-bretagne.jpg" alt="Logo Diamant Bleu Bretagne"><i class="region-sheen" aria-hidden="true"></i></span>
+          <span class="region-copy"><small>FINISTÈRE · BRETAGNE</small><strong>DIAMANT BLEU</strong><span>BRETAGNE</span><b>ENTRER DANS LA BOUTIQUE　↗</b></span>
+        </button>
+      </div>
+      <small class="gate-hint">◆　EXCLUSIVITÉ · ÉLÉGANCE · DISTINCTION　◆</small>
+    </div>
+  </div>
+  <section id="intro-screen" class="intro-screen" aria-hidden="true" aria-label="Ouverture de la boutique">
+    <div class="intro-nebula" aria-hidden="true"></div><div class="intro-gridline" aria-hidden="true"></div>
+    <div class="intro-aura" aria-hidden="true"></div>
+    <div id="intro-mosaic" class="intro-mosaic" aria-hidden="true"></div>
+    <div class="intro-crest"><img id="intro-logo" src="assets/diamant-idf.jpg" alt=""><span class="crest-flash"></span></div>
+    <div class="intro-wordmark">DIAMANT <em>BLEU</em></div>
+    <div id="intro-region-name" class="intro-subtitle">ÎLE-DE-FRANCE</div>
+    <p id="intro-status" class="intro-status" role="status" aria-live="polite">OUVERTURE DE VOTRE UNIVERS</p>
+    <div class="intro-progress"><span></span></div>
+    <div class="intro-wipe intro-wipe-top" aria-hidden="true"></div><div class="intro-wipe intro-wipe-bottom" aria-hidden="true"></div>
+  </section>
+  <audio id="luxury-audio" src="assets/luxe-ambiance.mp3" preload="none" loop></audio>
+  <div class="ambient ambient-one" aria-hidden="true"></div><div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="announcement"><span class="shimmer-dot">✦</span><span id="announcement-text">L'excellence se distingue dans les détails</span><span class="shimmer-dot">✦</span></div>
+  <header class="topbar">
+    <a href="#home" class="brand" data-route="home" aria-label="Accueil Diamant Bleu">
+      <img id="brand-logo" src="assets/diamant-idf.jpg" alt="Diamant Bleu"/><span><b>DIAMANT BLEU</b><small id="brand-region">ÎLE-DE-FRANCE</small></span>
+    </a>
+    <nav class="desktop-links" aria-label="Navigation principale"><a href="#home" data-route="home">Accueil</a><a href="#shop" data-route="shop">Collections</a><a href="#info" data-route="info">La Maison</a></nav>
+    <div class="head-actions">  <div class="floating-controls">
+    <button id="music-toggle" class="floating-control" aria-label="Activer la musique" aria-pressed="false" title="Activer la musique">♫</button>
+    <button id="change-region" class="floating-control region-change" aria-label="Changer de région" title="Changer de région">⌖</button>
+  </div>
+
+      <button class="icon-btn" data-route="favorites" aria-label="Mes favoris"><svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0l-1 1-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg></button>
+      <button class="icon-btn cart-head" data-route="cart" aria-label="Voir le panier"><svg viewBox="0 0 24 24"><path d="M3 3h2l2.5 12h11L21 7H6M9 21h.01M18 21h.01"/></svg><span id="cart-count" class="count-pill" hidden>0</span></button>
+    </div>
+  </header>
+  <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  <main id="view" tabindex="-1"></main>
+  <footer class="site-footer"><img id="footer-logo" src="assets/diamant-idf.jpg" alt=""/><strong>DIAMANT BLEU</strong><span>EXIGENCE · EXCLUSIVITÉ · DISTINCTION</span><div class="footer-line"></div><small>© <span id="year"></span> DIAMANT BLEU · Tous droits réservés</small></footer>
+  <nav class="bottom-nav" aria-label="Navigation mobile">
+    <button data-route="home" aria-label="Accueil"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v11H3V10Zm6 11v-8h6v8"/></svg><small>Accueil</small></button>
+    <button data-route="shop" aria-label="Shop"><svg viewBox="0 0 24 24"><path d="M4 8h16l-1 13H5L4 8Zm4 0V6a4 4 0 0 1 8 0v2"/></svg><small>Shop</small></button>
+    <button data-route="favorites" aria-label="Favoris"><svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0l-1 1-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg><small>Favoris</small></button>
+    <button data-route="info" aria-label="La Maison"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/></svg><small>Infos</small></button>
+    <button data-route="cart" aria-label="Panier"><svg viewBox="0 0 24 24"><path d="M3 3h2l2.5 12h11L21 7H6M9 21h.01M18 21h.01"/></svg><small>Panier</small><i id="mobile-count" hidden>0</i></button>
+  </nav>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="product-dialog" class="product-dialog" aria-label="Détail du produit"><div id="dialog-content"></div></dialog>
+  <dialog id="media-dialog" class="media-dialog" aria-label="Agrandir le média"><button class="close-dialog" data-close="media">✕</button><div id="media-content"></div></dialog>
+  <template id="sparkle"><span class="sparkle" aria-hidden="true">✦</span></template>
+</body>
+</html>
