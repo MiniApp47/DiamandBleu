@@ -80,7 +80,11 @@ Tous les détails de mon produit.`,
           description:
             "💎🔥 Considérée par de nombreux connaisseurs comme l’une des meilleures expressions de l’Amnesia, la Amnesia Core Cut est une sélection d’élite recherchée pour son profil terpénique puissant et son effet cérébral particulièrement intense. 🔥💎\n\n ✨ Les effets\n\n 🚀 Montée rapide et énergique\n 😄 Euphorie marquée\n 🧠 Stimulation mentale puissante\n 🎨 Créativité et concentration accrues\n 🗣️ Effet social apprécié des amateurs de sativas\n\n 👃 Les arômes\n\n 🍊 Agrumes frais et zestés\n 🌿 Notes Haze classiques\n 🌶️ Légères touches épicées et encensées\n\n 🌱 Pourquoi elle est si recherchée ? \n\n • Sélection réputée pour sa stabilité \n • Profil aromatique particulièrement intense \n • Forte production de résine ✨ \n • Expression fidèle de l’esprit Amnesia « old school » \n • Très appréciée des amateurs de Haze européennes\n\n 🏆 Pour les connaisseurs\n La Core Cut est souvent citée parmi les meilleures coupes d’Amnesia grâce à son équilibre entre puissance, saveurs citronnées explosives et effet mental clair. Beaucoup la considèrent comme une référence lorsqu’on parle de vraie Amnesia de haut niveau.\n\n ⭐ En résumé :\n Une Amnesia premium, ultra citronnée, résineuse et cérébrale, recherchée par les amateurs de Haze authentiques et les passionnés de génétiques européennes. 🔥⚡🧠💎🌿",
           tarifs: [
-            { weight: "10g", price: 70.0 }
+            { weight: "5g", price: 60.0 },
+            { weight: "10g", price: 110.0 },
+            { weight: "25g", price: 210.0 },
+            { weight: "50g", price: 330.0 },
+            { weight: "100g", price: 600.0 }
           ],
         },
         {
@@ -96,7 +100,11 @@ Tous les détails de mon produit.`,
           description:
             "💎🔥 Considérée par de nombreux connaisseurs comme l’une des meilleures expressions de l’Amnesia, la Amnesia Core Cut est une sélection d’élite recherchée pour son profil terpénique puissant et son effet cérébral particulièrement intense. 🔥💎\n\n ✨ Les effets\n\n 🚀 Montée rapide et énergique\n 😄 Euphorie marquée\n 🧠 Stimulation mentale puissante\n 🎨 Créativité et concentration accrues\n 🗣️ Effet social apprécié des amateurs de sativas\n\n 👃 Les arômes\n\n 🍊 Agrumes frais et zestés\n 🌿 Notes Haze classiques\n 🌶️ Légères touches épicées et encensées\n\n 🌱 Pourquoi elle est si recherchée ? \n\n • Sélection réputée pour sa stabilité \n • Profil aromatique particulièrement intense \n • Forte production de résine ✨ \n • Expression fidèle de l’esprit Amnesia « old school » \n • Très appréciée des amateurs de Haze européennes\n\n 🏆 Pour les connaisseurs\n La Core Cut est souvent citée parmi les meilleures coupes d’Amnesia grâce à son équilibre entre puissance, saveurs citronnées explosives et effet mental clair. Beaucoup la considèrent comme une référence lorsqu’on parle de vraie Amnesia de haut niveau.\n\n ⭐ En résumé :\n Une Amnesia premium, ultra citronnée, résineuse et cérébrale, recherchée par les amateurs de Haze authentiques et les passionnés de génétiques européennes. 🔥⚡🧠💎🌿",
           tarifs: [
-            { weight: "10g", price: 70.0 }
+            { weight: "5g", price: 60.0 },
+            { weight: "10g", price: 110.0 },
+            { weight: "25g", price: 210.0 },
+            { weight: "50g", price: 330.0 },
+            { weight: "100g", price: 600.0 }
           ],
         },
         {
@@ -112,7 +120,11 @@ Tous les détails de mon produit.`,
           description:
             "💎🔥 Considérée par de nombreux connaisseurs comme l’une des meilleures expressions de l’Amnesia, la Amnesia Core Cut est une sélection d’élite recherchée pour son profil terpénique puissant et son effet cérébral particulièrement intense. 🔥💎\n\n ✨ Les effets\n\n 🚀 Montée rapide et énergique\n 😄 Euphorie marquée\n 🧠 Stimulation mentale puissante\n 🎨 Créativité et concentration accrues\n 🗣️ Effet social apprécié des amateurs de sativas\n\n 👃 Les arômes\n\n 🍊 Agrumes frais et zestés\n 🌿 Notes Haze classiques\n 🌶️ Légères touches épicées et encensées\n\n 🌱 Pourquoi elle est si recherchée ? \n\n • Sélection réputée pour sa stabilité \n • Profil aromatique particulièrement intense \n • Forte production de résine ✨ \n • Expression fidèle de l’esprit Amnesia « old school » \n • Très appréciée des amateurs de Haze européennes\n\n 🏆 Pour les connaisseurs\n La Core Cut est souvent citée parmi les meilleures coupes d’Amnesia grâce à son équilibre entre puissance, saveurs citronnées explosives et effet mental clair. Beaucoup la considèrent comme une référence lorsqu’on parle de vraie Amnesia de haut niveau.\n\n ⭐ En résumé :\n Une Amnesia premium, ultra citronnée, résineuse et cérébrale, recherchée par les amateurs de Haze authentiques et les passionnés de génétiques européennes. 🔥⚡🧠💎🌿",
           tarifs: [
-            { weight: "10g", price: 70.0 }
+            { weight: "5g", price: 60.0 },
+            { weight: "10g", price: 110.0 },
+            { weight: "25g", price: 210.0 },
+            { weight: "50g", price: 330.0 },
+            { weight: "100g", price: 600.0 }
           ],
         },
         {
@@ -128,7 +140,11 @@ Tous les détails de mon produit.`,
           description:
             "💎🔥 Considérée par de nombreux connaisseurs comme l’une des meilleures expressions de l’Amnesia, la Amnesia Core Cut est une sélection d’élite recherchée pour son profil terpénique puissant et son effet cérébral particulièrement intense. 🔥💎\n\n ✨ Les effets\n\n 🚀 Montée rapide et énergique\n 😄 Euphorie marquée\n 🧠 Stimulation mentale puissante\n 🎨 Créativité et concentration accrues\n 🗣️ Effet social apprécié des amateurs de sativas\n\n 👃 Les arômes\n\n 🍊 Agrumes frais et zestés\n 🌿 Notes Haze classiques\n 🌶️ Légères touches épicées et encensées\n\n 🌱 Pourquoi elle est si recherchée ? \n\n • Sélection réputée pour sa stabilité \n • Profil aromatique particulièrement intense \n • Forte production de résine ✨ \n • Expression fidèle de l’esprit Amnesia « old school » \n • Très appréciée des amateurs de Haze européennes\n\n 🏆 Pour les connaisseurs\n La Core Cut est souvent citée parmi les meilleures coupes d’Amnesia grâce à son équilibre entre puissance, saveurs citronnées explosives et effet mental clair. Beaucoup la considèrent comme une référence lorsqu’on parle de vraie Amnesia de haut niveau.\n\n ⭐ En résumé :\n Une Amnesia premium, ultra citronnée, résineuse et cérébrale, recherchée par les amateurs de Haze authentiques et les passionnés de génétiques européennes. 🔥⚡🧠💎🌿",
           tarifs: [
-            { weight: "10g", price: 70.0 }
+            { weight: "5g", price: 60.0 },
+            { weight: "10g", price: 110.0 },
+            { weight: "25g", price: 210.0 },
+            { weight: "50g", price: 330.0 },
+            { weight: "100g", price: 600.0 },
           ],
         },
         {
@@ -144,7 +160,121 @@ Tous les détails de mon produit.`,
           description:
             "💎🔥 Considérée par de nombreux connaisseurs comme l’une des meilleures expressions de l’Amnesia, la Amnesia Core Cut est une sélection d’élite recherchée pour son profil terpénique puissant et son effet cérébral particulièrement intense. 🔥💎\n\n ✨ Les effets\n\n 🚀 Montée rapide et énergique\n 😄 Euphorie marquée\n 🧠 Stimulation mentale puissante\n 🎨 Créativité et concentration accrues\n 🗣️ Effet social apprécié des amateurs de sativas\n\n 👃 Les arômes\n\n 🍊 Agrumes frais et zestés\n 🌿 Notes Haze classiques\n 🌶️ Légères touches épicées et encensées\n\n 🌱 Pourquoi elle est si recherchée ? \n\n • Sélection réputée pour sa stabilité \n • Profil aromatique particulièrement intense \n • Forte production de résine ✨ \n • Expression fidèle de l’esprit Amnesia « old school » \n • Très appréciée des amateurs de Haze européennes\n\n 🏆 Pour les connaisseurs\n La Core Cut est souvent citée parmi les meilleures coupes d’Amnesia grâce à son équilibre entre puissance, saveurs citronnées explosives et effet mental clair. Beaucoup la considèrent comme une référence lorsqu’on parle de vraie Amnesia de haut niveau.\n\n ⭐ En résumé :\n Une Amnesia premium, ultra citronnée, résineuse et cérébrale, recherchée par les amateurs de Haze authentiques et les passionnés de génétiques européennes. 🔥⚡🧠💎🌿",
           tarifs: [
-            { weight: "10g", price: 70.0 }
+            { weight: "5g", price: 60.0 },
+            { weight: "10g", price: 110.0 },
+            { weight: "25g", price: 210.0 },
+            { weight: "50g", price: 330.0 },
+            { weight: "100g", price: 600.0 },
+          ],
+        },
+      ],
+    },
+   {
+      id: "Weed",
+      name: "Weed 🌿",
+      type: "Weed",
+      quality: "Weed 🌿",
+      image: "Categ.jpg", // Ton image de catégorie Weed
+
+      products: [
+        {
+          id: "🍭 ZKITTLEZ",
+          flag: "🇺🇸",
+          name: "🍭 ZKITTLEZ",
+          farm: "🌈🍬 MOE GREEN’S 🍬🌈",
+          promoEligible: true,
+          type: "Weed",
+          image: "ProductZK.jpg",
+          images:[ "ProductZK1.jpg"],
+          video: "VideoZK.mov",
+          description:
+            `🌈🍬 MOE GREEN’S 🍬🌈
+🇺🇸 SAN FRANCISCO — CALIFORNIA
+
+🏆 CALI TOP SHELF A+ 💎
+
+🍭 STRAIN : ZKITTLEZ
+🌿 GÉNÉTIQUE : HYBRIDE À DOMINANCE INDICA
+
+🍬 PROFIL AROMATIQUE
+La Zkittlez est réputée pour ses arômes gourmands de bonbons fruités, mêlant fruits tropicaux, agrumes et notes sucrées légèrement acidulées. 🍊🍍
+
+💜 ASPECT DE LA FLEUR
+❄️ Têtes compactes, généreusement recouvertes de trichomes brillants.
+💜 Magnifiques nuances violettes et vertes.
+🧡 Pistils orangés bien visibles.
+💎 Aspect givré et particulièrement résineux.
+
+✨ COLLECTION TOP SHELF
+📦 FORMAT : BAG 3,5G
+
+🌈 MOE GREEN’S — ZKITTLEZ 💎`,
+          tarifs: [
+            { weight: "1 bag", price: 50.0 },
+            { weight: "3 bags", price: 130.0 },
+            { weight: "5 bags", price: 200.0 },
+          ],
+        },
+        {
+          id: "MAD BERRY 🍓",
+          flag: "🇺🇸",
+          name: "MAD BERRY 🍓",
+          farm: "🍓💜 MOE GREEN’S 💜🍓",
+          promoEligible: true,
+          type: "Weed",
+          image: "ProductMB.jpg",
+          images:[ "ProductMB1.jpg"],
+          video: "VideoMB.mov",
+          description:
+            `🍓💜 MOE GREEN’S 💜🍓
+🇺🇸 SAN FRANCISCO — CALIFORNIA
+
+🏆 CALI TOP SHELF A+ 💎
+
+🍇 STRAIN : MAD BERRY 🍓
+
+💜 Un univers explosif de fruits rouges et de baies sauvages, avec une ambiance gourmande, sucrée et intensément fruitée. 🍒🫐
+
+✨ COLLECTION PREMIUM
+📦 FORMAT : BAG 3,5G
+🇺🇸 CALIFORNIA EDITION
+
+💎 MOE GREEN’S — MAD BERRY 🍇`,
+          tarifs: [
+            { weight: "1 bag", price: 50.0 },
+            { weight: "3 bags", price: 130.0 },
+            { weight: "5 bags", price: 200.0 },
+          ],
+        },
+        {
+          id: "BUBBLE GUM 🍭",
+          flag: "🇺🇸",
+          name: "BUBBLE GUM 🍭",
+          farm: "🍬💗 MOE GREEN’S 💗🍬",
+          promoEligible: true,
+          type: "Weed",
+          image: "ProductBG.jpg",
+          images:[ "ProductBG1.jpg"],
+          video: "VideoBG.mov",
+          description:
+            `🍬💗 MOE GREEN’S 💗🍬
+🇺🇸 SAN FRANCISCO — CALIFORNIA
+
+💎 CALI TOP SHELF A+ 🏆
+
+🫧 STRAIN : BUBBLE GUM 🍭
+
+💗 Un univers gourmand aux inspirations bubble-gum, avec des notes sucrées et fruitées qui rappellent les bonbons de notre enfance. 🍬🍓
+
+✨ COLLECTION PREMIUM
+📦 FORMAT : BAG 3,5G
+🇺🇸 CALIFORNIA EDITION
+
+💎 MOE GREEN’S — BUBBLE GUM 💗`,
+          tarifs: [
+            { weight: "1 bag", price: 50.0 },
+            { weight: "3 bags", price: 130.0 },
+            { weight: "5 bags", price: 200.0 },
           ],
         },
       ],
