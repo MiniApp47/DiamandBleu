@@ -4987,3 +4987,106 @@ html[data-region] .feature-banner {
 .db-results-summary span{font-weight:800;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--goldlight)}
 .db-results-summary small{font-size:9px;color:#a6c1e1}
 .db-results-fast .db-product-lane-header{padding-top:9px}
+
+
+/* ================================================================
+   DIAMANT BLEU · INTRO EMBLÈME ROYAL & FONDS IMMERSIFS
+   - Emblème identique au diamant IDF original, avec fond détouré
+   - Fond IDF fondecran.png / Bretagne fondecranB.png (racine GitHub)
+   - Fond toujours visible sur toutes les pages même sur iOS/Telegram
+   ================================================================ */
+
+/* Remplacer visuellement l'ancien faux diamant dessiné en CSS. */
+.opening-cinema .cinema-diamond {
+  width: clamp(230px, min(71vw, 60vh), 430px);
+  height: auto;
+  aspect-ratio: 1;
+  overflow: visible;
+  background: transparent;
+  filter: drop-shadow(0 0 19px rgba(36, 149, 255, .48)) drop-shadow(0 17px 39px rgba(0, 0, 0, .60));
+}
+.opening-cinema .cinema-diamond::before,
+.opening-cinema .cinema-diamond::after,
+.opening-cinema .cinema-diamond .cinema-diamond-core {
+  display: none !important;
+  content: none !important;
+}
+.opening-cinema .cinema-diamond img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: 0;
+  background: transparent;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+/* Le fond du site n'est PAS le fond cinématique de la sélection. */
+html[data-region="idf"] {
+  --boutique-wallpaper: url("fondecran.png");
+}
+html[data-region="bretagne"] {
+  --boutique-wallpaper: url("fondecranB.png");
+}
+html[data-region] body {
+  background: transparent;
+}
+/* Désactivation de l'ancienne pseudo-image, qui passait derrière le body. */
+html[data-region] body::before {
+  content: none !important;
+  display: none !important;
+}
+.db-wallpaper {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background-color: #050a16;
+  background-image:
+    linear-gradient(180deg, rgba(0, 0, 0, .70), rgba(0, 0, 0, .90)),
+    var(--boutique-wallpaper);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+/* Contenu de la vitrine au-dessus du fond, sans casser les overlays fixed. */
+body > #view,
+body > .announcement,
+body > .site-footer {
+  position: relative;
+  z-index: 1;
+}
+html[data-region] .hero {
+  background: transparent !important;
+}
+html[data-region] .hero::before {
+  opacity: .10;
+}
+html[data-region] .hero::after {
+  opacity: .13;
+}
+html[data-region] .ambient {
+  opacity: .06;
+}
+/* Des panneaux légèrement translucides pour voir le fond en naviguant. */
+html[data-region] .site-footer {
+  background: rgba(2, 8, 20, .55);
+}
+
+@media(max-width:720px) {
+  .opening-cinema .cinema-diamond {
+    width: clamp(205px, 73vw, 355px);
+  }
+  .db-wallpaper {
+    background-position: center center;
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  .opening-cinema .cinema-diamond {
+    animation: none !important;
+  }
+}
