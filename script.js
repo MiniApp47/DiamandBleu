@@ -12,7 +12,7 @@
      3. Tu peux ajouter autant de catégories, farms et produits que voulu.
      4. Enregistre script.js et mets-le à jour sur GitHub.
 
-     Les deux tableaux sont VIDES à la livraison : aucun faux produit.
+     Les produits et les médias existants restent dans les deux tableaux.
 
      MODÈLE À DÉCOMMENTER ET COLLER ENTRE [ ET ] :
 
@@ -74,6 +74,7 @@ Tous les détails de mon produit.`,
           farm: "👑 STATIC PLATES — SEASON II 👑",
           promoEligible: true,
           type: "Static ⭐",
+          sousCategorie: "static-sift",
           image: "ProductCI.jpg",
           images: ["ProductCI1.jpg"],
           video: "VideoCI.mov",
@@ -100,11 +101,9 @@ Tous les détails de mon produit.`,
 
 💎 DIAMANT BLEU — DEPUIS 2015 💎`,
           tarifs: [
-            { weight: "5g", price: 60.0 },
-            { weight: "10g", price: 110.0 },
-            { weight: "25g", price: 210.0 },
-            { weight: "50g", price: 330.0 },
-            { weight: "100g", price: 600.0 },
+            { weight: "5g", price: 80.0 },
+            { weight: "10g", price: 150.0 },
+            { weight: "50g", price: 480.0 },
           ],
         },
         {
@@ -114,6 +113,7 @@ Tous les détails de mon produit.`,
           farm: "👑 STATIC PLATES — SEASON II 👑",
           promoEligible: true,
           type: "Static ⭐",
+          sousCategorie: "static-sift",
           image: "ProductAB.jpg",
           images: ["ProductAB1.jpg"],
           video: "VideoAB.mov",
@@ -139,11 +139,9 @@ Tous les détails de mon produit.`,
 
 💎 DIAMANT BLEU — DEPUIS 2015 💎`,
           tarifs: [
-            { weight: "5g", price: 60.0 },
-            { weight: "10g", price: 110.0 },
-            { weight: "25g", price: 210.0 },
-            { weight: "50g", price: 330.0 },
-            { weight: "100g", price: 600.0 },
+            { weight: "5g", price: 80.0 },
+            { weight: "10g", price: 150.0 },
+            { weight: "50g", price: 480.0 },
           ],
         },
         {
@@ -153,6 +151,7 @@ Tous les détails de mon produit.`,
           farm: "👑 STATIC PLATES — SEASON II 👑",
           promoEligible: true,
           type: "Static ⭐",
+          sousCategorie: "static-sift",
           image: "ProductPR.jpg",
           images: ["ProductPR1.jpg"],
           video: "VideoPR.mov",
@@ -177,40 +176,58 @@ Tous les détails de mon produit.`,
 
 💎 DIAMANT BLEU — DEPUIS 2015 💎`,
           tarifs: [
-            { weight: "5g", price: 60.0 },
-            { weight: "10g", price: 110.0 },
-            { weight: "25g", price: 210.0 },
-            { weight: "50g", price: 330.0 },
-            { weight: "100g", price: 600.0 },
+            { weight: "5g", price: 80.0 },
+            { weight: "10g", price: 150.0 },
+            { weight: "50g", price: 480.0 },
           ],
         },
          {
-          id: "Strawberry guava 🍓",
+          id: "Strawberry Banana 🍌",
           flag: "🇺🇸",
-          name: "Strawberry guava 🍓",
+          name: "Strawberry Banana 🍌",
           farm: "Melt Bob 🤡",
           promoEligible: true,
           type: "Fresh Frozen 🧊",
-          image: "ProductSG.jpg",
-          images: ["ProductSG1.jpg"],
+          sousCategorie: "frozen",
+          image: "ProductSG2.jpg",
+          images: ["ProductSG.jpg","ProductSG1.jpg"],
           video: "VideoSG.mov",
           description:
-            "💎🔥 Considérée par de nombreux connaisseurs comme l’une des meilleures expressions de l’Amnesia, la Amnesia Core Cut est une sélection d’élite recherchée pour son profil terpénique puissant et son effet cérébral particulièrement intense. 🔥💎\n\n ✨ Les effets\n\n 🚀 Montée rapide et énergique\n 😄 Euphorie marquée\n 🧠 Stimulation mentale puissante\n 🎨 Créativité et concentration accrues\n 🗣️ Effet social apprécié des amateurs de sativas\n\n 👃 Les arômes\n\n 🍊 Agrumes frais et zestés\n 🌿 Notes Haze classiques\n 🌶️ Légères touches épicées et encensées\n\n 🌱 Pourquoi elle est si recherchée ? \n\n • Sélection réputée pour sa stabilité \n • Profil aromatique particulièrement intense \n • Forte production de résine ✨ \n • Expression fidèle de l’esprit Amnesia « old school » \n • Très appréciée des amateurs de Haze européennes\n\n 🏆 Pour les connaisseurs\n La Core Cut est souvent citée parmi les meilleures coupes d’Amnesia grâce à son équilibre entre puissance, saveurs citronnées explosives et effet mental clair. Beaucoup la considèrent comme une référence lorsqu’on parle de vraie Amnesia de haut niveau.\n\n ⭐ En résumé :\n Une Amnesia premium, ultra citronnée, résineuse et cérébrale, recherchée par les amateurs de Haze authentiques et les passionnés de génétiques européennes. 🔥⚡🧠💎🌿",
+              `🧊💎 MELT MOB 💎🧊
+🍓 Strain : Strawberry Banana 🍌
+❄️ Catégorie : Fresh Frozen
+🥶 Process : Cold Cured
+🧬 Génétique : Banana Kush × Strawberry Bubble Gum
+🌈 PROFIL TERPÉNIQUE
+Une génétique à dominante indica caractérisée par un profil aromatique fruité, crémeux et tropical.
+🍓 Fraise : notes gourmandes, sucrées et légèrement acidulées.
+🍌 Banane : nuances douces et crémeuses.
+🍬 Bubble-gum : touches aromatiques de bonbon fruité.
+🌴 Tropical : nuances exotiques et légèrement terreuses.
+🔬 PRINCIPAUX TERPÈNES ASSOCIÉS
+🟡 Limonène — notes d'agrumes.
+🟢 Myrcène — nuances fruitées et terreuses.
+🟠 Caryophyllène — touches boisées et épicées.
+━━━━━━━━━━━━━━
+🇺🇸 GENETICS CALIFORNIA
+🇲🇦 PRODUCT OF MOROCCO
+━━━━━━━━━━━━━━`,
           tarifs: [
             { weight: "5g", price: 60.0 },
-            { weight: "10g", price: 110.0 },
-            { weight: "25g", price: 210.0 },
-            { weight: "50g", price: 330.0 },
-            { weight: "100g", price: 600.0 },
+            { weight: "10g", price: 120.0 },
+            { weight: "25g", price: 250.0 },
+            { weight: "50g", price: 380.0 },
+            { weight: "100g", price: 650.0 },
           ],
         },
-        {
+       /*  {
           id: "Black Maple 💣",
           flag: "🇺🇸",
           name: "Black Maple 💣",
           farm: "Melt Bob 🤡",
           promoEligible: true,
           type: "Fresh Frozen 🧊",
+          sousCategorie: "frozen",
           image: "ProductBM.jpg",
           images: ["ProductBM1.jpg"],
           video: "VideoBM.mov",
@@ -223,7 +240,7 @@ Tous les détails de mon produit.`,
             { weight: "50g", price: 330.0 },
             { weight: "100g", price: 600.0 },
           ],
-        },
+        }, */
         {
           id: "Grape gazoline ⛽",
           flag: "🇺🇸",
@@ -231,17 +248,38 @@ Tous les détails de mon produit.`,
           farm: "Melt Bob 🤡",
           promoEligible: true,
           type: "Fresh Frozen 🧊",
-          image: "ProductGG.jpg",
-          images: ["ProductGG1.jpg"],
+          sousCategorie: "frozen",
+          image: "ProductGG2.jpg",
+          images: ["ProductGG.jpg","ProductGG1.jpg"],
           video: "VideoGG.mov",
           description:
-            "💎🔥 Considérée par de nombreux connaisseurs comme l’une des meilleures expressions de l’Amnesia, la Amnesia Core Cut est une sélection d’élite recherchée pour son profil terpénique puissant et son effet cérébral particulièrement intense. 🔥💎\n\n ✨ Les effets\n\n 🚀 Montée rapide et énergique\n 😄 Euphorie marquée\n 🧠 Stimulation mentale puissante\n 🎨 Créativité et concentration accrues\n 🗣️ Effet social apprécié des amateurs de sativas\n\n 👃 Les arômes\n\n 🍊 Agrumes frais et zestés\n 🌿 Notes Haze classiques\n 🌶️ Légères touches épicées et encensées\n\n 🌱 Pourquoi elle est si recherchée ? \n\n • Sélection réputée pour sa stabilité \n • Profil aromatique particulièrement intense \n • Forte production de résine ✨ \n • Expression fidèle de l’esprit Amnesia « old school » \n • Très appréciée des amateurs de Haze européennes\n\n 🏆 Pour les connaisseurs\n La Core Cut est souvent citée parmi les meilleures coupes d’Amnesia grâce à son équilibre entre puissance, saveurs citronnées explosives et effet mental clair. Beaucoup la considèrent comme une référence lorsqu’on parle de vraie Amnesia de haut niveau.\n\n ⭐ En résumé :\n Une Amnesia premium, ultra citronnée, résineuse et cérébrale, recherchée par les amateurs de Haze authentiques et les passionnés de génétiques européennes. 🔥⚡🧠💎🌿",
+            `🧊💎 MELT MOB 💎🧊
+🍇 Strain : Grape Gasoline
+❄️ Catégorie : Fresh Frozen
+🥶 Process : Cold Cured
+🧬 Génétique : Grape Pie × Jet Fuel Gelato
+🇺🇸 Breeder : Compound Genetics
+🌈 PROFIL AROMATIQUE DE LA STRAIN
+La Grape Gasoline est une génétique hybride associant les caractéristiques fruitées de la Grape Pie aux nuances de carburant de la Jet Fuel Gelato.
+🍇 Raisin noir — notes fruitées et sucrées.
+⛽ Gasoline — nuances caractéristiques de diesel.
+🫐 Fruits rouges — touches de baies et de fruits mûrs.
+🌿 Notes terreuses — fond végétal et légèrement épicé.
+🔬 PRINCIPAUX TERPÈNES ASSOCIÉS
+🟢 Myrcène — nuances terreuses et herbacées.
+🟡 Limonène — notes d'agrumes.
+🟠 Caryophyllène — nuances boisées et poivrées.
+Ces caractéristiques correspondent au profil général de la génétique Grape Gasoline. 
+
+━━━━━━━━━━━━━━
+🇺🇸 GENETICS CALIFORNIA
+🇲🇦 PRODUCT OF MOROCCO (origine indiquée)`,
           tarifs: [
             { weight: "5g", price: 60.0 },
-            { weight: "10g", price: 110.0 },
-            { weight: "25g", price: 210.0 },
-            { weight: "50g", price: 330.0 },
-            { weight: "100g", price: 600.0 },
+            { weight: "10g", price: 120.0 },
+            { weight: "25g", price: 250.0 },
+            { weight: "50g", price: 380.0 },
+            { weight: "100g", price: 650.0 },
           ],
         },
         {
@@ -251,17 +289,43 @@ Tous les détails de mon produit.`,
           farm: "Melt Bob 🤡",
           promoEligible: true,
           type: "Fresh Frozen 🧊",
-          image: "ProductP.jpg",
-          images: ["ProductP1.jpg"],
+          sousCategorie: "frozen",
+          image: "ProductP2.jpg",
+          images: ["ProductP.jpg","ProductP1.jpg"],
           video: "VideoP.mov",
           description:
-            "💎🔥 Considérée par de nombreux connaisseurs comme l’une des meilleures expressions de l’Amnesia, la Amnesia Core Cut est une sélection d’élite recherchée pour son profil terpénique puissant et son effet cérébral particulièrement intense. 🔥💎\n\n ✨ Les effets\n\n 🚀 Montée rapide et énergique\n 😄 Euphorie marquée\n 🧠 Stimulation mentale puissante\n 🎨 Créativité et concentration accrues\n 🗣️ Effet social apprécié des amateurs de sativas\n\n 👃 Les arômes\n\n 🍊 Agrumes frais et zestés\n 🌿 Notes Haze classiques\n 🌶️ Légères touches épicées et encensées\n\n 🌱 Pourquoi elle est si recherchée ? \n\n • Sélection réputée pour sa stabilité \n • Profil aromatique particulièrement intense \n • Forte production de résine ✨ \n • Expression fidèle de l’esprit Amnesia « old school » \n • Très appréciée des amateurs de Haze européennes\n\n 🏆 Pour les connaisseurs\n La Core Cut est souvent citée parmi les meilleures coupes d’Amnesia grâce à son équilibre entre puissance, saveurs citronnées explosives et effet mental clair. Beaucoup la considèrent comme une référence lorsqu’on parle de vraie Amnesia de haut niveau.\n\n ⭐ En résumé :\n Une Amnesia premium, ultra citronnée, résineuse et cérébrale, recherchée par les amateurs de Haze authentiques et les passionnés de génétiques européennes. 🔥⚡🧠💎🌿",
+              `🧊💎 MELT MOB 💎🧊
+
+🥭 Strain : Papaya
+❄️ Catégorie : Fresh Frozen
+🥶 Process : Cold Cured
+🧬 Génétique : Papaya
+
+🌈 PROFIL TERPÉNIQUE
+
+La Papaya est une génétique reconnue pour son profil aromatique tropical, fruité et onctueux, avec une signature particulièrement gourmande et exotique.
+
+🥭 Papaye mûre : notes sucrées, juteuses et intensément fruitées.
+🍍 Fruits tropicaux : nuances exotiques rappelant la mangue et l’ananas.
+🍬 Douceur crémeuse : fond rond, suave et légèrement bonbonné.
+🌿 Touches végétales légères : une finition fraîche qui équilibre l’ensemble.
+
+🔬 PRINCIPAUX TERPÈNES ASSOCIÉS
+
+🟡 Limonène — notes fruitées et éclatantes.
+🟢 Myrcène — profil tropical, doux et rond.
+🟠 Caryophyllène — légère profondeur épicée et structurée.
+
+━━━━━━━━━━━━━━
+🇺🇸 GENETICS CALIFORNIA
+🇲🇦 PRODUCT OF MOROCCO
+━━━━━━━━━━━━━━`,
           tarifs: [
             { weight: "5g", price: 60.0 },
-            { weight: "10g", price: 110.0 },
-            { weight: "25g", price: 210.0 },
-            { weight: "50g", price: 330.0 },
-            { weight: "100g", price: 600.0 },
+            { weight: "10g", price: 120.0 },
+            { weight: "25g", price: 250.0 },
+            { weight: "50g", price: 380.0 },
+            { weight: "100g", price: 650.0 },
           ],
         },
         {
@@ -271,17 +335,45 @@ Tous les détails de mon produit.`,
           farm: "Melt Bob 🤡",
           promoEligible: true,
           type: "Fresh Frozen 🧊",
-          image: "ProductPM.jpg",
-          images: ["ProductPM1.jpg"],
+          sousCategorie: "frozen",
+          image: "ProductPM2.jpg",
+          images: ["ProductPM.jpg","ProductPM1.jpg"],
           video: "VideoPM.mov",
           description:
-            "💎🔥 Considérée par de nombreux connaisseurs comme l’une des meilleures expressions de l’Amnesia, la Amnesia Core Cut est une sélection d’élite recherchée pour son profil terpénique puissant et son effet cérébral particulièrement intense. 🔥💎\n\n ✨ Les effets\n\n 🚀 Montée rapide et énergique\n 😄 Euphorie marquée\n 🧠 Stimulation mentale puissante\n 🎨 Créativité et concentration accrues\n 🗣️ Effet social apprécié des amateurs de sativas\n\n 👃 Les arômes\n\n 🍊 Agrumes frais et zestés\n 🌿 Notes Haze classiques\n 🌶️ Légères touches épicées et encensées\n\n 🌱 Pourquoi elle est si recherchée ? \n\n • Sélection réputée pour sa stabilité \n • Profil aromatique particulièrement intense \n • Forte production de résine ✨ \n • Expression fidèle de l’esprit Amnesia « old school » \n • Très appréciée des amateurs de Haze européennes\n\n 🏆 Pour les connaisseurs\n La Core Cut est souvent citée parmi les meilleures coupes d’Amnesia grâce à son équilibre entre puissance, saveurs citronnées explosives et effet mental clair. Beaucoup la considèrent comme une référence lorsqu’on parle de vraie Amnesia de haut niveau.\n\n ⭐ En résumé :\n Une Amnesia premium, ultra citronnée, résineuse et cérébrale, recherchée par les amateurs de Haze authentiques et les passionnés de génétiques européennes. 🔥⚡🧠💎🌿",
+              `🧊💎 MELT MOB 💎🧊
+
+🖊️ Strain : Permanent Marker
+❄️ Catégorie : Fresh Frozen
+🥶 Process : Cold Cured
+🧬 Génétique : généralement associée à Biscotti × Sherb Bx × Jealousy
+
+🌈 PROFIL TERPÉNIQUE
+
+La Permanent Marker est une génétique reconnue pour son profil aromatique intense, moderne et très expressif, mêlant des notes sucrées, florales, crémeuses et gazy avec une signature olfactive marquée.
+
+🍬 Bonbon sucré — ouverture gourmande et légèrement crémeuse.
+🖊️ Marker / encre — note distinctive, puissante et reconnaissable.
+⛽ Gas — fond lourd, profond et bien présent.
+🌸 Touches florales — nuances fines qui équilibrent le profil.
+🍪 Nuances crémeuses et biscuitées — finition ronde, dense et complexe.
+
+🔬 PRINCIPAUX TERPÈNES ASSOCIÉS
+
+🟡 Limonène — éclat fruité et frais.
+🟠 Caryophyllène — profondeur épicée et structurée.
+🟢 Myrcène — rondeur aromatique et fond terreux.
+🟣 Linalol — légères touches florales.
+
+━━━━━━━━━━━━━━
+🇺🇸 GENETICS CALIFORNIA
+🇲🇦 PRODUCT OF MOROCCO
+━━━━━━━━━━━━━━`,
           tarifs: [
             { weight: "5g", price: 60.0 },
-            { weight: "10g", price: 110.0 },
-            { weight: "25g", price: 210.0 },
-            { weight: "50g", price: 330.0 },
-            { weight: "100g", price: 600.0 },
+            { weight: "10g", price: 120.0 },
+            { weight: "25g", price: 250.0 },
+            { weight: "50g", price: 380.0 },
+            { weight: "100g", price: 650.0 },
           ],
         },
       ],
@@ -301,6 +393,7 @@ Tous les détails de mon produit.`,
           farm: "🌈🍬 MOE GREEN’S 🍬🌈",
           promoEligible: true,
           type: "Weed 🌿",
+          sousCategorie: "jars-us",
           image: "ProductZK.jpg",
           images: ["ProductZK1.jpg"],
           video: "VideoZK.mov",
@@ -326,9 +419,9 @@ La Zkittlez est réputée pour ses arômes gourmands de bonbons fruités, mêlan
 
 🌈 MOE GREEN’S — ZKITTLEZ 💎`,
           tarifs: [
-            { weight: "1 bag", price: 50.0 },
-            { weight: "3 bags", price: 130.0 },
+            { weight: "Bags de 3,5g", price: 50.0 },
             { weight: "5 bags", price: 200.0 },
+            { weight: "10 bags", price: 360.0 },
           ],
         },
         {
@@ -338,6 +431,7 @@ La Zkittlez est réputée pour ses arômes gourmands de bonbons fruités, mêlan
           farm: "🍓💜 MOE GREEN’S 💜🍓",
           promoEligible: true,
           type: "Weed 🌿",
+          sousCategorie: "jars-us",
           image: "ProductMB.jpg",
           images: ["ProductMB1.jpg"],
           video: "VideoMB.mov",
@@ -356,9 +450,9 @@ La Zkittlez est réputée pour ses arômes gourmands de bonbons fruités, mêlan
 
 💎 MOE GREEN’S — MAD BERRY 🍇`,
           tarifs: [
-            { weight: "1 bag", price: 50.0 },
-            { weight: "3 bags", price: 130.0 },
+            { weight: "Bags de 3,5g", price: 50.0 },
             { weight: "5 bags", price: 200.0 },
+            { weight: "10 bags", price: 360.0 },
           ],
         },
         {
@@ -368,6 +462,7 @@ La Zkittlez est réputée pour ses arômes gourmands de bonbons fruités, mêlan
           farm: "🍬💗 MOE GREEN’S 💗🍬",
           promoEligible: true,
           type: "Weed 🌿",
+          sousCategorie: "jars-us",
           image: "ProductBG.jpg",
           images: ["ProductBG1.jpg"],
           video: "VideoBG.mov",
@@ -386,9 +481,9 @@ La Zkittlez est réputée pour ses arômes gourmands de bonbons fruités, mêlan
 
 💎 MOE GREEN’S — BUBBLE GUM 💗`,
           tarifs: [
-            { weight: "1 bag", price: 50.0 },
-            { weight: "3 bags", price: 130.0 },
+            { weight: "Bags de 3,5g", price: 50.0 },
             { weight: "5 bags", price: 200.0 },
+            { weight: "10 bags", price: 360.0 },
           ],
         },
       ],
@@ -432,6 +527,91 @@ La Zkittlez est réputée pour ses arômes gourmands de bonbons fruités, mêlan
     idf: { name: "ÎLE-DE-FRANCE", logo: "assets/diamant-idf.jpg" },
     bretagne: { name: "BRETAGNE", logo: "assets/diamant-bretagne.jpg" },
   };
+
+  /* ==============================================================
+     💎 NAVIGATION PREMIUM — MODIFIABLES SANS CHANGER LES PRODUITS
+
+     Les produits restent dans appData (IDF) / appDataBretagne.
+     Pour les ranger précisément, ajoute dans UNE fiche produit :
+       sousCategorie: "static-sift",
+
+     Identifiants disponibles :
+       TOP SHELF : bags-es, bags-ca-th, jars-us, coffee-nl
+       HASH      : jaune-cremeux, cali-mousse, dry-filtered,
+                   frozen, static-sift, wpff-extraction
+
+     Tu peux aussi saisir le libellé complet à la place de l'ID.
+     Les anciens produits sont reconnus par leur type/description,
+     sans toucher aux images, vidéos, descriptions ou tarifs.
+     =============================================================== */
+  const SHOP_GROUPS = [
+    {
+      id: "top-shelf",
+      name: "Top Shelf Premium",
+      number: "01",
+      symbol: "✧",
+      tagline: "Fleurs, bags, jars & sélections internationales",
+      subs: [
+        { id: "bags-es", name: "Bags & pochettes 🇪🇸", note: "ESPAGNE", symbol: "✦" },
+        { id: "bags-ca-th", name: "Bags & pochettes 🇨🇦🇹🇭", note: "CANADA · THAÏLANDE", symbol: "◇" },
+        { id: "jars-us", name: "Jars & bags 🇺🇸", note: "ÉTATS-UNIS", symbol: "✧" },
+        { id: "coffee-nl", name: "Coffee 🇳🇱", note: "PAYS-BAS", symbol: "☼" },
+      ],
+    },
+    {
+      id: "hash-premium",
+      name: "Hash Premium",
+      number: "02",
+      symbol: "◆",
+      tagline: "Collections, extractions & textures premium",
+      subs: [
+        { id: "jaune-cremeux", name: "Jaune crémeux 🇲🇦", note: "MAROC", symbol: "✦" },
+        { id: "cali-mousse", name: "Cali mousse 🇺🇸", note: "USA", symbol: "◇" },
+        { id: "dry-filtered", name: "Dry / filtered 🇲🇦🇪🇸", note: "MAROC · ESPAGNE", symbol: "✧" },
+        { id: "frozen", name: "Frozen / Fresh Frozen 🇲🇦🇺🇸", note: "FROZEN", symbol: "❄" },
+        { id: "static-sift", name: "Static Sift / Double Static 🇲🇦🇺🇸", note: "STATIC", symbol: "✺" },
+        { id: "wpff-extraction", name: "WPFF / Extraction 🇺🇸🇹🇭🇳🇱", note: "EXTRACTION", symbol: "◈" },
+      ],
+    },
+  ];
+  const normalizeShopText = text => String(text ?? "").normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  const shopGroupById = id => SHOP_GROUPS.find(g => g.id === id);
+  const shopSubById = (group, sub) => shopGroupById(group)?.subs.find(s => s.id === sub);
+
+  function categorizeProduct(raw, cat) {
+    // Le champ explicite a toujours priorité sur la détection automatique.
+    const explicit = raw.sousCategorie ?? raw.sousCategorieId ?? raw.sous_categorie ?? raw.shopSubcategory ?? "";
+    const wanted = normalizeShopText(explicit);
+    for (const group of SHOP_GROUPS) {
+      const sub = group.subs.find(s => wanted &&
+        (normalizeShopText(s.id) === wanted || normalizeShopText(s.name) === wanted));
+      if (sub) return { shop_group: group.id, shop_sub: sub.id };
+    }
+    const groupHint = normalizeShopText(raw.groupe ?? raw.collection ?? cat.groupe ?? cat.collection ?? cat.name ?? cat.id);
+    const typeHint = normalizeShopText(raw.type ?? "");
+    const hash = /(hash|resine|static|frozen|dry|filtered|filtre|mousse|wpff|extract)/.test(groupHint + " " + typeHint);
+    const group = hash ? "hash-premium" : "top-shelf";
+    // Sources supplémentaires utiles pour les anciens articles sans champ sousCategorie.
+    const hint = normalizeShopText([raw.type, raw.subcategory, raw.farm, raw.name, raw.description].join(" "));
+    let sub = "";
+    if (group === "hash-premium") {
+      if (/wpff|extraction|rosin|live rosin/.test(typeHint)) sub = "wpff-extraction";
+      else if (/static|double static/.test(typeHint)) sub = "static-sift";
+      else if (/frozen/.test(typeHint)) sub = "frozen";
+      else if (/dry|filtr|120u|3x filtre/.test(typeHint)) sub = "dry-filtered";
+      else if (/cali mousse/.test(typeHint)) sub = "cali-mousse";
+      else if (/jaune|cremeux/.test(typeHint)) sub = "jaune-cremeux";
+      else if (/static/.test(hint)) sub = "static-sift";
+      else if (/fresh frozen|frozen/.test(hint)) sub = "frozen";
+    } else {
+      if (/coffee|holland|pays bas|amsterdam/.test(typeHint)) sub = "coffee-nl";
+      else if (/espagn|espana|spain/.test(typeHint)) sub = "bags-es";
+      else if (/canad|thailand|thai/.test(typeHint)) sub = "bags-ca-th";
+      else if (/(jar|bag|weed|fleur)/.test(typeHint) && /(california|san francisco|cali top shelf|usa|etats unis)/.test(hint)) sub = "jars-us";
+    }
+    return { shop_group: group, shop_sub: sub || "a-classer" };
+  }
 
   // Le site convertit automatiquement ton ancien format appData
   // en fiches produits, variantes, galeries et farms filtrables.
@@ -491,8 +671,10 @@ La Zkittlez est réputée pour ses arômes gourmands de bonbons fruités, mêlan
         return;
       }
       seenProducts.add(id);
+      const section = categorizeProduct(raw, cat);
       products.push({
         id,
+        ...section,
         category_id: cat.id,
         farm_id: farm ? farmId : "",
         farm: String(raw.farm ?? farm?.name ?? ""),
@@ -504,6 +686,10 @@ La Zkittlez est réputée pour ses arômes gourmands de bonbons fruités, mêlan
           raw.featured ?? raw.isFeatured ?? raw.miseEnAvant ?? false,
         ),
         active: true,
+        // Date facultative : dateAjout: "2026-11-25" dans la fiche produit.
+        dateAjout: String(raw.dateAjout ?? raw.ajouteLe ?? raw.addedAt ?? ""),
+        // Par défaut, les nouvelles fiches sont celles ajoutées en bas du script.
+        sourceIndex: products.length,
         stock:
           raw.stock === undefined || raw.stock === null || raw.stock === ""
             ? null
@@ -600,10 +786,12 @@ La Zkittlez est réputée pour ses arômes gourmands de bonbons fruités, mêlan
     loading: true,
     error: "",
     route: "home",
-    category: "all",
+    category: "all", // compatibilité avec les anciennes fiches
     farm: "all",
+    shopGroup: "",
+    shopSubcat: "",
     query: "",
-    sort: "featured",
+    sort: "recent",
     favorites: new Set(),
     cart: [],
     galleryIndex: 0,
@@ -690,65 +878,172 @@ La Zkittlez est réputée pour ses arômes gourmands de bonbons fruités, mêlan
           "La sélection sera bientôt disponible.",
         );
   }
-  function renderHome() {
-    const cats = state.catalog.categories || [],
-      pp = products(),
-      featured = pp.filter((p) => p.featured).slice(0, 8);
-    return `<section class="hero"><div class="hero-inner"><span class="hero-badge">✦　 MAISON DE SÉLECTION　 ✦</span><img class="hero-logo" src="${REGIONS[state.region]?.logo || REGIONS.idf.logo}" alt="Emblème Diamant Bleu"><h1>DIAMANT <span>BLEU</span></h1><div class="hero-region-name">${esc(REGIONS[state.region]?.name || "")}</div><p class="hero-sub">${esc(state.catalog.settings?.subtitle || "Le prestige a une signature.")}</p><div class="hero-actions"><button class="btn btn-gold" data-route="shop">DÉCOUVRIR NOS COLLECTIONS　→</button><button class="btn btn-outline" data-route="info">✦　LA MAISON</button></div></div><div class="hero-cutline">◆　RARETÉ · ÉLÉGANCE · DISTINCTION　◆</div></section><div class="container"><div class="trust-line"><div class="trust-item"><b>01</b><small>Sélection exigeante</small></div><div class="trust-item"><b>02</b><small>Expérience élégante</small></div><div class="trust-item"><b>03</b><small>Service soigné</small></div></div><section class="section"><div class="section-heading"><div><div class="eyebrow">LA MAISON DIAMANT BLEU</div><h2>Nos collections</h2></div><button class="btn btn-plain link-arrow" data-route="shop">Tout explorer　→</button></div><div class="category-grid">${cats.map(categoryCard).join("") || empty("Collections à venir", "Nos catégories seront bientôt dévoilées.")}</div></section><section class="section"><div class="section-heading"><div><div class="eyebrow">PIÈCES SÉLECTIONNÉES</div><h2>À la une</h2></div><button class="btn btn-plain link-arrow" data-route="shop">Voir la boutique　→</button></div>${collectionGrid(featured.length ? featured : pp.slice(0, 4))}</section><section class="feature-banner"><div class="banner-copy"><div class="eyebrow">✦ UNE EXPÉRIENCE À PART</div><h2>Diamant Bleu · ${esc(REGIONS[state.region]?.name || "")}</h2><p>Une boutique pensée pour une expérience moderne, élégante et simple, avec une sélection adaptée à votre région.</p><button class="btn btn-gold" data-route="shop">DÉCOUVRIR LA BOUTIQUE　→</button></div><div class="banner-image"><img src="${REGIONS[state.region]?.logo || REGIONS.idf.logo}" alt="Diamant Bleu"></div></section></div>`;
+  function newestProducts(items = products()) {
+    const date = p => {
+      const value = String(p.dateAjout || "").trim();
+      if (!/^\d{4}-\d{2}-\d{2}/.test(value)) return 0;
+      const parsed = Date.parse(value);
+      return Number.isFinite(parsed) ? parsed : 0;
+    };
+    return [...items].sort((a, b) => date(b) - date(a) || (b.sourceIndex ?? 0) - (a.sourceIndex ?? 0));
   }
+  function renderHome() {
+    const all = products();
+    const latest = newestProducts(all).slice(0, 4);
+    const grouped = SHOP_GROUPS.map(g => {
+      const collection = newestProducts(all.filter(p => p.shop_group === g.id));
+      const availableSubs = visibleShopSubs(g).filter(s => collection.some(p => p.shop_sub === s.id));
+      return `<section class="db-home-family reveal" aria-label="${esc(g.name)}">
+        <header class="db-home-family-header"><div><span class="eyebrow">COLLECTION ${esc(g.number)} · ${collection.length} RÉFÉRENCE${collection.length>1?'S':''}</span>
+        <h3>${esc(g.name)}</h3></div><button class="db-inline-link" type="button" data-shop-group="${g.id}">EXPLORER ↗</button></header>
+        ${availableSubs.length ? `<div class="db-home-mini-subs">${availableSubs.map(s=>`<button type="button" data-shop-parent="${g.id}" data-shop-subcat="${s.id}">${esc(s.name)} <b>${countShop(g.id,s.id)}</b></button>`).join("")}</div>` : `<p class="db-home-soon">Collection en préparation · À découvrir prochainement</p>`}
+        ${collection.length ? `<div class="products-grid db-home-family-products">${collection.slice(0, 4).map(productCard).join("")}</div>` : ""}
+      </section>`;
+    }).join("");
+    return `<section class="hero db-hero-slim"><div class="hero-inner">
+      <span class="hero-badge">✦ LA MAISON DU PRESTIGE ✦</span>
+      <img class="hero-logo" src="${REGIONS[state.region]?.logo || REGIONS.idf.logo}" alt="Emblème Diamant Bleu">
+      <h1>DIAMANT <span>BLEU</span></h1><div class="hero-region-name">${esc(REGIONS[state.region]?.name || "")}</div>
+      <p class="hero-sub">${esc(state.catalog.settings?.subtitle || "Le prestige a une signature.")}</p>
+      <div class="hero-actions"><button class="btn btn-gold" data-route="shop">VOIR LES COLLECTIONS　→</button></div>
+      </div><div class="hero-cutline">◆　EXCLUSIVITÉ · DISTINCTION　◆</div></section>
+      <div class="container db-home-content">
+        <section id="home-latest" class="db-home-latest db-featured-section">
+          <header class="db-fast-heading"><div><span class="eyebrow">✦ JUSTE ARRIVÉ</span><h2>Derniers <em>ajouts</em></h2>
+          <p>Découvrez les dernières pièces intégrées à notre sélection.</p></div>
+          <button class="db-inline-link" data-route="shop">TOUT VOIR ↗</button></header>
+          ${latest.length ? `<div class="products-grid db-home-products">${latest.map(productCard).join("")}</div>` : `<div class="db-home-soon db-home-empty">Les premières pièces arrivent prochainement.</div>`}
+        </section>
+        <section class="db-home-collections db-featured-section"><div class="db-fast-heading"><div><span class="eyebrow">SÉLECTIONS PAR UNIVERS</span><h2>À chaque pièce <em>sa collection</em></h2>
+        <p>Les références sont regroupées par famille, sans mélange.</p></div></div>
+        <div class="db-home-families">${grouped}</div></section>
+      </div>`;
+  }
+
+  // Afficher d’abord les rubriques disponibles ; les rubriques vides restent repliées.
+  // Aucun produit n'est mélangé avec une autre famille dans le Shop.
+  function visibleShopSubs(group) {
+    const base = [...group.subs];
+    if (products().some(p => p.shop_group === group.id && p.shop_sub === "a-classer")) {
+      base.push({ id: "a-classer", name: "Autres références à classer", note: "À RANGER DANS SCRIPT.JS", symbol: "◇" });
+    }
+    return base;
+  }
+  function countShop(groupId, subId="") {
+    return products().filter(p => p.shop_group === groupId && (!subId || p.shop_sub === subId)).length;
+  }
+  function renderShopGroupCard(g) {
+    const selected = state.shopGroup === g.id;
+    const count = countShop(g.id);
+    return `<button type="button" class="db-fast-tab ${selected ? "active" : ""} ${count ? "" : "is-empty"}" data-shop-group="${g.id}" aria-pressed="${selected}">
+      <span aria-hidden="true" class="db-tab-gem">${g.symbol}</span><span>${esc(g.name)}</span><b>${count}</b></button>`;
+  }
+  function renderShopSection(g) {
+    const subs = visibleShopSubs(g).filter(s => countShop(g.id, s.id) > 0);
+    if (!subs.length) return "";
+    return `<section class="db-fast-subsection" data-shop-section="${g.id}" aria-label="${esc(g.name)}">
+      <div class="db-fast-subhead"><strong>${esc(g.name)}</strong><span>${countShop(g.id)} pièces</span></div>
+      <div class="db-fast-sub-list">${subs.map(s => {
+        const active = state.shopGroup === g.id && state.shopSubcat === s.id;
+        return `<button class="db-fast-subchip ${active ? "active" : ""}" type="button" data-shop-subcat="${s.id}" data-shop-parent="${g.id}" aria-pressed="${active}">
+          <span>${esc(s.name)}</span><b>${countShop(g.id,s.id)}</b><span aria-hidden="true">↗</span></button>`;
+      }).join("")}</div></section>`;
+  }
+  function renderEmptyShopCategories(groups = SHOP_GROUPS) {
+    const empty = groups.flatMap(g => visibleShopSubs(g).filter(s => countShop(g.id,s.id) === 0).map(s => ({g,s})));
+    if (!empty.length) return "";
+    return `<details class="db-empty-drawer"><summary>✦ ${empty.length} sous-catégorie${empty.length>1?'s':''} en préparation <span>Afficher ↕</span></summary>
+      <div class="db-empty-pills">${empty.map(({g,s}) => `<button type="button" data-shop-parent="${g.id}" data-shop-subcat="${s.id}"><small>${esc(g.name)}</small>${esc(s.name)} <span>À venir</span></button>`).join("")}</div></details>`;
+  }
+
   function filteredProducts() {
-    let list = products().filter(
-      (p) =>
-        (state.category === "all" ||
-          String(p.category_id) === String(state.category)) &&
-        (state.farm === "all" || String(p.farm_id) === String(state.farm)),
-    );
-    const q = state.query.trim().toLowerCase();
-    if (q)
-      list = list.filter((p) =>
-        [
-          p.name,
-          p.farm,
-          p.subcategory,
-          p.description,
-          catById(p.category_id)?.name,
-        ]
-          .join(" ")
-          .toLowerCase()
-          .includes(q),
-      );
-    if (state.sort === "price_up")
-      list.sort((a, b) => fromPrice(a) - fromPrice(b));
-    if (state.sort === "price_down")
-      list.sort((a, b) => fromPrice(b) - fromPrice(a));
-    if (state.sort === "az")
-      list.sort((a, b) => a.name.localeCompare(b.name, "fr"));
-    if (state.sort === "featured")
-      list.sort((a, b) => Number(b.featured) - Number(a.featured));
+    const q = normalizeShopText(state.query);
+    let list = products().filter(p => {
+      if (state.shopGroup && p.shop_group !== state.shopGroup) return false;
+      if (state.shopSubcat && p.shop_sub !== state.shopSubcat) return false;
+      if (state.farm !== "all" && String(p.farm_id) !== state.farm) return false;
+      if (!q) return true;
+      const g = shopGroupById(p.shop_group);
+      const sub = shopSubById(p.shop_group, p.shop_sub);
+      return normalizeShopText([p.name,p.farm,p.subcategory,p.description,g?.name,sub?.name].join(" ")).includes(q);
+    });
+    if (state.sort === "price_up") list.sort((a,b) => fromPrice(a) - fromPrice(b));
+    else if (state.sort === "price_down") list.sort((a,b) => fromPrice(b) - fromPrice(a));
+    else if (state.sort === "az") list.sort((a,b) => a.name.localeCompare(b.name,"fr"));
+    else if (state.sort === "featured") list.sort((a,b) => Number(b.featured) - Number(a.featured));
+    else list = newestProducts(list);
     return list;
   }
+  function shopFarmFilter(list) {
+    const farmMap = new Map();
+    for (const p of list) {
+      if (!p.farm_id || p.farm_id === "direct") continue;
+      if (!farmMap.has(String(p.farm_id))) farmMap.set(String(p.farm_id), p.farm || p.farm_id);
+    }
+    if (!farmMap.size) return "";
+    return `<div class="db-farm-panel"><span class="db-filter-label">AFFINER PAR FARM</span><div class="db-farm-tabs">
+       <button data-farm="all" class="db-farm-chip ${state.farm === "all" ? "active" : ""}">Toutes les farms</button>
+       ${[...farmMap].map(([id,name]) => `<button data-farm="${esc(id)}" class="db-farm-chip ${state.farm === id ? "active" : ""}">${esc(name)}</button>`).join("")}
+    </div></div>`;
+  }
   function renderShop() {
-    const cats = state.catalog.categories || [];
-    return `<div class="container"><div class="page-head"><div class="eyebrow">L'ART DE SÉLECTIONNER</div><h1 class="page-title">Les Collections</h1><p>Découvrez nos pièces, explorez, sélectionnez et composez votre panier.</p></div><div class="shop-toolbar"><div class="search-field"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg><input id="shop-search" type="search" autocomplete="off" placeholder="Rechercher un produit…" value="${esc(state.query)}" aria-label="Rechercher"></div><select class="form-select" id="shop-sort" aria-label="Trier"><option value="featured" ${state.sort === "featured" ? "selected" : ""}>À la une</option><option value="price_up" ${state.sort === "price_up" ? "selected" : ""}>Prix croissant</option><option value="price_down" ${state.sort === "price_down" ? "selected" : ""}>Prix décroissant</option><option value="az" ${state.sort === "az" ? "selected" : ""}>Nom A à Z</option></select></div><div class="filter-chips">${[{ id: "all", name: "Toutes les collections" }, ...cats].map((c) => `<button class="chip ${state.category === c.id ? "active" : ""}" data-category="${esc(c.id)}">${esc(c.name)}</button>`).join("")}</div>${
-      state.category !== "all" && catById(state.category)?.farms?.length
-        ? `<div class="farm-selector"><div class="eyebrow">CHOISIR UNE FARM</div><div class="farm-list"><button class="farm-tile ${state.farm === "all" ? "active" : ""}" data-farm="all"><span class="farm-gem">◆</span><span>Toutes les farms</span></button>${catById(
-            state.category,
-          )
-            .farms.map(
-              (f) =>
-                `<button class="farm-tile ${state.farm === f.id ? "active" : ""}" data-farm="${esc(f.id)}">${f.image && safeUrl(f.image) ? `<img src="${esc(safeUrl(f.image))}" alt="" loading="lazy">` : '<span class="farm-gem">◆</span>'}<span>${esc(f.name)}</span></button>`,
-            )
-            .join("")}</div></div>`
-        : ""
-    }<div id="shop-results"></div></div>`;
+    const all = products();
+    const groupsWithItems = SHOP_GROUPS.filter(g => countShop(g.id) > 0);
+    const shownGroups = state.shopGroup ? SHOP_GROUPS.filter(g=>g.id === state.shopGroup) : groupsWithItems;
+    return `<div class="container db-shop db-shop-fast">
+      <header class="db-shop-intro db-intro-small"><div class="eyebrow">DIAMANT BLEU / ${esc(REGIONS[state.region]?.name || "COLLECTIONS")}</div>
+      <h1 class="page-title">La <em>boutique</em></h1><p>Les produits d'abord, les catégories pour affiner.</p></header>
+      <nav class="db-fast-tabs" aria-label="Collections principales">
+        <button class="db-fast-tab ${!state.shopGroup ? "active" : ""}" type="button" data-shop-reset aria-pressed="${!state.shopGroup}"><span class="db-tab-gem" aria-hidden="true">✦</span><span>Tout voir</span><b>${all.length}</b></button>
+        ${SHOP_GROUPS.map(renderShopGroupCard).join("")}</nav>
+      <div class="db-fast-categories">${shownGroups.map(renderShopSection).join("")}</div>
+      ${renderEmptyShopCategories(state.shopGroup ? SHOP_GROUPS.filter(g=>g.id===state.shopGroup) : SHOP_GROUPS)}
+      <div class="db-shop-tools db-tools-fast"><div class="shop-toolbar">
+        <div class="search-field"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg>
+          <input id="shop-search" type="search" autocomplete="off" placeholder="Rechercher une pièce, une farm…" value="${esc(state.query)}" aria-label="Rechercher un produit"></div>
+        <select class="form-select" id="shop-sort" aria-label="Trier les produits">
+          <option value="recent" ${state.sort === "recent" ? "selected" : ""}>Derniers ajouts</option>
+          <option value="featured" ${state.sort === "featured" ? "selected" : ""}>À la une</option>
+          <option value="price_up" ${state.sort === "price_up" ? "selected" : ""}>Prix croissant</option>
+          <option value="price_down" ${state.sort === "price_down" ? "selected" : ""}>Prix décroissant</option>
+          <option value="az" ${state.sort === "az" ? "selected" : ""}>Nom A à Z</option>
+        </select></div></div>
+      <section id="shop-results" class="db-shop-results db-results-fast" tabindex="-1" aria-label="Produits disponibles"></section>
+    </div>`;
   }
   function updateShopResults() {
-    const e = $("#shop-results");
-    if (!e) return;
-    const list = filteredProducts();
-    e.innerHTML = `<p class="results-counter">${list.length} produit${list.length > 1 ? "s" : ""} dans la sélection</p>${collectionGrid(list)}`;
+    const el = $("#shop-results");
+    if (!el) return;
+    const all = filteredProducts();
+    const group = shopGroupById(state.shopGroup);
+    const sub = shopSubById(state.shopGroup, state.shopSubcat) || (state.shopSubcat === "a-classer" ? {name:"Autres références à classer"}:null);
+    const heading = sub?.name || group?.name || "Les pièces disponibles";
+    if (!all.length) {
+      el.innerHTML = `<header class="db-fast-heading db-result-spotlight"><div><span class="eyebrow">VOTRE SÉLECTION</span><h2>${esc(heading)}</h2></div></header>
+        <div class="db-home-soon db-no-products"><strong>${products().length ? "Aucune pièce dans cette sélection" : "Catalogue en préparation"}</strong><p>${products().length ? "Choisissez une autre catégorie ou effacez votre recherche." : "Les produits seront bientôt visibles ici."}</p>${products().length ? '<button type="button" class="db-inline-link" data-shop-reset>VOIR TOUTES LES PIÈCES ↗</button>' : ""}</div>`;
+      return;
+    }
+    if (sub) {
+      const base = products().filter(p => p.shop_group === state.shopGroup && p.shop_sub === state.shopSubcat);
+      el.innerHTML = `<header class="db-fast-heading db-result-spotlight"><div><span class="eyebrow">${esc(group?.name || "COLLECTION")}</span><h2>${esc(heading)}</h2><p>${all.length} pièce${all.length>1?'s':''}</p></div><button class="db-inline-link" type="button" data-shop-reset>TOUT VOIR ↗</button></header>
+        ${shopFarmFilter(base)}<div class="products-grid">${all.map(productCard).join("")}</div>`;
+    } else {
+      const blocks = [];
+      for (const g of SHOP_GROUPS) {
+        if (group && group.id !== g.id) continue;
+        for (const s of visibleShopSubs(g)) {
+          const portion = all.filter(p => p.shop_group===g.id && p.shop_sub===s.id);
+          if (!portion.length) continue;
+          blocks.push(`<section class="db-product-lane"><header class="db-product-lane-header"><div><span class="eyebrow">${esc(g.name)} · ${portion.length} pièce${portion.length>1?'s':''}</span><h3>${esc(s.name)}</h3></div>
+             <button type="button" class="db-inline-link" data-shop-parent="${g.id}" data-shop-subcat="${s.id}">VOIR ↗</button></header>
+             <div class="products-grid">${portion.map(productCard).join("")}</div></section>`);
+        }
+      }
+      el.innerHTML = `<div class="db-results-summary"><span>✦ ${all.length} pièce${all.length>1?'s':''} disponible${all.length>1?'s':''}</span><small>Par collection · sans mélange</small></div>${blocks.join("")}`;
+    }
     revealCards();
   }
+
   function renderFavorites() {
     return `<div class="container"><div class="page-head"><div class="eyebrow">VOTRE SÉLECTION</div><h1 class="page-title">Mes favoris</h1><p>Les pièces qui ont retenu votre attention.</p></div>${collectionGrid(products().filter((p) => state.favorites.has(p.id)))}</div>`;
   }
@@ -1219,9 +1514,48 @@ La Zkittlez est réputée pour ses arômes gourmands de bonbons fruités, mêlan
       navigate(route.dataset.route);
       return;
     }
+    const selectGroup = e.target.closest("[data-shop-group]");
+    if (selectGroup) {
+      const group = selectGroup.dataset.shopGroup;
+      if (!shopGroupById(group)) return;
+      state.shopGroup = group;
+      state.shopSubcat = "";
+      state.category = "all";
+      state.farm = "all";
+      state.query = "";
+      navigate("shop");
+      requestAnimationFrame(() => $("#shop-results")?.scrollIntoView({behavior:reduceMotion()?"auto":"smooth",block:"start"}));
+      return;
+    }
+    const selectSub = e.target.closest("[data-shop-subcat]");
+    if (selectSub) {
+      const group = selectSub.dataset.shopParent, sub = selectSub.dataset.shopSubcat;
+      if (!(shopSubById(group,sub) || (sub === "a-classer" && shopGroupById(group)))) return;
+      state.shopGroup = group;
+      state.shopSubcat = sub;
+      state.category = "all";
+      state.farm = "all";
+      state.query = "";
+      render();
+      pulse();
+      requestAnimationFrame(() => $("#shop-results")?.scrollIntoView({behavior:reduceMotion()?"auto":"smooth",block:"start"}));
+      return;
+    }
+    if (e.target.closest("[data-shop-reset]")) {
+      state.shopGroup = "";
+      state.shopSubcat = "";
+      state.farm = "all";
+      state.query = "";
+      navigate("shop");
+      return;
+    }
     const cat = e.target.closest("[data-category]");
     if (cat) {
-      state.category = cat.dataset.category;
+      const oldCategory = catById(cat.dataset.category);
+      const guessHash = /hash|résine|resine|static|frozen/i.test(oldCategory?.name || cat.dataset.category);
+      state.shopGroup = guessHash ? "hash-premium" : "top-shelf";
+      state.shopSubcat = "";
+      state.category = "all";
       state.farm = "all";
       state.query = "";
       navigate("shop");
@@ -1579,8 +1913,10 @@ La Zkittlez est réputée pour ses arômes gourmands de bonbons fruités, mêlan
     state.route = "home";
     state.category = "all";
     state.farm = "all";
+    state.shopGroup = "";
+    state.shopSubcat = "";
     state.query = "";
-    state.sort = "featured";
+    state.sort = "recent";
     state.favorites = new Set(loadJSON(region + "_favorites") || []);
     state.cart = loadJSON(region + "_cart") || [];
     state.checkout = {
