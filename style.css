@@ -5024,10 +5024,10 @@ html[data-region] .feature-banner {
 
 /* Le fond du site n'est PAS le fond cinématique de la sélection. */
 html[data-region="idf"] {
-  --boutique-wallpaper: url("fondecran.png");
+  --boutique-wallpaper: url("Fondecran.png");
 }
 html[data-region="bretagne"] {
-  --boutique-wallpaper: url("fondecranB.png");
+  --boutique-wallpaper: url("FondecranB.png");
 }
 html[data-region] body {
   background: transparent;
