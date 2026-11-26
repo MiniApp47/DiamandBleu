@@ -1,4 +1,4 @@
-/* DIAMANT BLEU — 100 % GitHub Pages + bot Telegram uniquement. Aucun panel, aucune API. */
+/* DIAMANT BLEU — catalogue GitHub Pages, ouverture des demandes sur WhatsApp. Aucun panel, aucune API. */
 (() => {
   "use strict";
   /* ==============================================================
@@ -505,7 +505,7 @@ La Zkittlez est réputée pour ses arômes gourmands de bonbons fruités, mêlan
       pickup_fee: 0,
       postal_fee: 0,
       contact_telegram: "",
-      contact_whatsapp: "",
+      contact_whatsapp: "https://wa.me/33671893855",
       contact_instagram: "",
       contact_signal: "",
     },
@@ -517,7 +517,7 @@ La Zkittlez est réputée pour ses arômes gourmands de bonbons fruités, mêlan
       pickup_fee: 0,
       postal_fee: 0,
       contact_telegram: "",
-      contact_whatsapp: "",
+      contact_whatsapp: "https://wa.me/33671893855",
       contact_instagram: "",
       contact_signal: "",
     },
@@ -729,6 +729,7 @@ La Zkittlez est réputée pour ses arômes gourmands de bonbons fruités, mêlan
     return { settings: { ...shopSettings[region] }, categories, products };
   }
 
+  const WHATSAPP_NUMBER = "33671893855"; // WhatsApp de la boutique, sans + ni espaces.
   const tg = window.Telegram?.WebApp || null;
   const $ = (s, root = document) => root.querySelector(s);
   const esc = (value) =>
@@ -766,7 +767,7 @@ La Zkittlez est réputée pour ses arômes gourmands de bonbons fruités, mêlan
       pickup_fee: 0,
       postal_fee: 0,
       contact_telegram: "",
-      contact_whatsapp: "",
+      contact_whatsapp: "https://wa.me/33671893855",
       contact_instagram: "",
       contact_signal: "",
     },
@@ -1080,8 +1081,7 @@ La Zkittlez est réputée pour ses arômes gourmands de bonbons fruités, mêlan
   function renderCheckout() {
     if (!cartLines().length)
       return empty("Panier vide", "Ajoute d’abord des produits.");
-    const botMode = canSendToTelegram();
-    return `<div class="container"><div class="page-head"><div class="eyebrow">DERNIÈRE ÉTAPE</div><h1 class="page-title">Finaliser votre demande</h1><p>${botMode ? "La demande sera envoyée directement au bot Telegram." : "Vous pourrez copier votre demande pour la transmettre au commerçant."}</p></div><div class="checkout-layout"><form id="checkout-form" class="checkout-fields glass"><div class="eyebrow">01 / MODE DE RÉCEPTION</div><h3>Comment souhaitez-vous recevoir votre sélection ?</h3><div class="radio-options">${[
+    return `<div class="container"><div class="page-head"><div class="eyebrow">DERNIÈRE ÉTAPE</div><h1 class="page-title">Finaliser votre demande</h1><p>Votre récapitulatif s'ouvrira directement sur WhatsApp, prêt à être envoyé à la boutique.</p></div><div class="checkout-layout"><form id="checkout-form" class="checkout-fields glass"><div class="eyebrow">01 / MODE DE RÉCEPTION</div><h3>Comment souhaitez-vous recevoir votre sélection ?</h3><div class="radio-options">${[
       ["delivery", "🚚", "Livraison"],
       ["pickup", "📍", "Retrait"],
       ["postal", "📦", "Expédition"],
@@ -1092,7 +1092,7 @@ La Zkittlez est réputée pour ses arômes gourmands de bonbons fruités, mêlan
       )
       .join(
         "",
-      )}</div><div class="eyebrow">02 / COORDONNÉES</div><div class="field"><label for="cust-name">Nom ou pseudo</label><input class="form-input" name="name" id="cust-name" maxlength="100" required placeholder="Votre nom" value="${esc(state.checkout.name)}"></div><div class="field"><label for="cust-phone">Téléphone de contact</label><input class="form-input" name="phone" id="cust-phone" maxlength="40" required placeholder="Numéro joignable" value="${esc(state.checkout.phone)}"></div><div class="field" id="address-field" ${state.checkout.fulfillment === "pickup" ? "hidden" : ""}><label for="cust-address">Adresse de livraison / expédition</label><textarea class="form-textarea" id="cust-address" name="address" maxlength="500" ${state.checkout.fulfillment === "pickup" ? "" : "required"} placeholder="Adresse, code postal, ville">${esc(state.checkout.address)}</textarea></div><div class="field"><label for="cust-notes">Précisions (facultatif)</label><textarea class="form-textarea" id="cust-notes" name="notes" maxlength="300" placeholder="Précisions de commande">${esc(state.checkout.notes)}</textarea></div><div id="quote-notice" class="notice">${botMode ? "La Mini App doit avoir été ouverte avec le bouton de clavier du bot." : "Ouvrez le shop depuis le bouton du clavier Telegram pour transmettre directement."}</div><button class="btn btn-gold btn-block" type="submit" id="order-submit">${botMode ? "ENVOYER LA DEMANDE AU BOT　✦" : "COPIER LA DEMANDE　✦"}</button><p class="muted" style="font-size:11px;line-height:1.8">Aucun paiement n'est réalisé ici. Les prix affichés sont indicatifs et la commande n'est définitive qu'après confirmation humaine.</p></form><div id="checkout-summary">${renderSummary(true)}</div></div></div>`;
+      )}</div><div class="eyebrow">02 / COORDONNÉES</div><div class="field"><label for="cust-name">Nom ou pseudo</label><input class="form-input" name="name" id="cust-name" maxlength="100" required placeholder="Votre nom" value="${esc(state.checkout.name)}"></div><div class="field"><label for="cust-phone">Téléphone de contact</label><input class="form-input" name="phone" id="cust-phone" maxlength="40" required placeholder="Numéro joignable" value="${esc(state.checkout.phone)}"></div><div class="field" id="address-field" ${state.checkout.fulfillment === "pickup" ? "hidden" : ""}><label for="cust-address">Adresse de livraison / expédition</label><textarea class="form-textarea" id="cust-address" name="address" maxlength="500" ${state.checkout.fulfillment === "pickup" ? "" : "required"} placeholder="Adresse, code postal, ville">${esc(state.checkout.address)}</textarea></div><div class="field"><label for="cust-notes">Précisions (facultatif)</label><textarea class="form-textarea" id="cust-notes" name="notes" maxlength="300" placeholder="Précisions de commande">${esc(state.checkout.notes)}</textarea></div><div id="quote-notice" class="notice">💬 WhatsApp s'ouvrira avec votre message prérempli. Vérifiez-le, puis appuyez sur <b>Envoyer</b> dans WhatsApp. <a id="whatsapp-fallback" class="whatsapp-fallback" href="https://wa.me/33671893855" target="_blank" rel="noopener noreferrer" hidden>Si WhatsApp ne s'ouvre pas, toucher ici ↗</a></div><button class="btn btn-gold btn-block" type="submit" id="order-submit">💬 OUVRIR WHATSAPP AVEC MA DEMANDE　✦</button><p class="muted" style="font-size:11px;line-height:1.8">Aucun paiement n'est réalisé ici. La demande n'est transmise que lorsque vous appuyez sur Envoyer dans WhatsApp ; elle doit ensuite être confirmée par la boutique.</p></form><div id="checkout-summary">${renderSummary(true)}</div></div></div>`;
   }
   function contactButtons() {
     const s = state.catalog.settings || {};
@@ -1114,7 +1114,7 @@ La Zkittlez est réputée pour ses arômes gourmands de bonbons fruités, mêlan
   }
   function renderInfo() {
     const s = state.catalog.settings || {};
-    return `<div class="container"><div class="page-head"><div class="eyebrow">BIENVENUE CHEZ NOUS</div><h1 class="page-title">La Maison</h1><p>${esc(s.info || "Bienvenue chez Diamant Bleu.")}</p></div><div class="info-grid"><article class="glass info-box"><span class="info-icon">✧</span><h3>La sélection</h3><p>Des collections présentées avec soin, pour découvrir facilement les produits.</p></article><article class="glass info-box"><span class="info-icon">◇</span><h3>Le service</h3><p>Livraison, retrait ou expédition selon les possibilités de votre région.</p></article><article class="glass info-box"><span class="info-icon">✦</span><h3>La simplicité</h3><p>Choisissez vos produits, préparez votre panier et transmettez votre demande dans Telegram.</p></article></div><div class="section"><div class="section-heading"><div><div class="eyebrow">INFOS PRATIQUES</div><h2>Vos questions</h2></div></div><div class="faq"><details><summary>Comment passer commande ?</summary><p>Ajoutez vos produits au panier puis envoyez la demande depuis le bouton du clavier du bot Telegram. La commande doit ensuite être confirmée par la boutique.</p></details><details><summary>Comment voir les nouveautés ?</summary><p>Rouvrez la boutique après une mise à jour du catalogue publiée sur GitHub.</p></details><details><summary>Comment ajouter une photo à ma sélection ?</summary><p>Chaque produit peut afficher plusieurs images et vidéos.</p></details></div></div><div class="section"><div class="section-heading"><div><div class="eyebrow">RESTONS EN CONTACT</div><h2>Nous contacter</h2></div></div><div class="contact-grid">${contactButtons()}</div></div></div>`;
+    return `<div class="container"><div class="page-head"><div class="eyebrow">BIENVENUE CHEZ NOUS</div><h1 class="page-title">La Maison</h1><p>${esc(s.info || "Bienvenue chez Diamant Bleu.")}</p></div><div class="info-grid"><article class="glass info-box"><span class="info-icon">✧</span><h3>La sélection</h3><p>Des collections présentées avec soin, pour découvrir facilement les produits.</p></article><article class="glass info-box"><span class="info-icon">◇</span><h3>Le service</h3><p>Livraison, retrait ou expédition selon les possibilités de votre région.</p></article><article class="glass info-box"><span class="info-icon">✦</span><h3>La simplicité</h3><p>Choisissez vos produits, préparez votre panier et retrouvez votre demande préremplie sur WhatsApp.</p></article></div><div class="section"><div class="section-heading"><div><div class="eyebrow">INFOS PRATIQUES</div><h2>Vos questions</h2></div></div><div class="faq"><details><summary>Comment passer commande ?</summary><p>Ajoutez vos produits au panier, complétez vos coordonnées, puis ouvrez WhatsApp avec votre message prérempli. Appuyez sur Envoyer dans WhatsApp pour transmettre la demande, qui doit ensuite être confirmée par la boutique.</p></details><details><summary>Comment voir les nouveautés ?</summary><p>Rouvrez la boutique après une mise à jour du catalogue publiée sur GitHub.</p></details><details><summary>Comment ajouter une photo à ma sélection ?</summary><p>Chaque produit peut afficher plusieurs images et vidéos.</p></details></div></div><div class="section"><div class="section-heading"><div><div class="eyebrow">RESTONS EN CONTACT</div><h2>Nous contacter</h2></div></div><div class="contact-grid">${contactButtons()}</div></div></div>`;
   }
   function renderError() {
     return `<div class="container"><div class="page-head"><h1 class="page-title">Catalogue indisponible</h1><p>Vérifie les tableaux appData et appDataBretagne de script.js.</p><div class="notice warn error-box">${esc(state.error)}</div><button class="btn btn-outline" id="retry-load">Réessayer</button></div></div>`;
@@ -1364,15 +1364,6 @@ La Zkittlez est réputée pour ses arômes gourmands de bonbons fruités, mêlan
     const addr = $("#cust-address");
     if (addr) addr.required = !pickup;
   }
-  // Telegram autorise sendData UNIQUEMENT quand la Mini App a été ouverte via un bouton de CLAVIER.
-  function canSendToTelegram() {
-    return !!(
-      tg &&
-      typeof tg.sendData === "function" &&
-      tg.platform !== "unknown" &&
-      new URLSearchParams(location.search).get("via") === "keyboard"
-    );
-  }
   function makeOrderPayload() {
     const items = cartLines().map(({ p, v, qty }) => ({
       name: String(p.name).slice(0, 100),
@@ -1437,7 +1428,27 @@ La Zkittlez est réputée pour ses arômes gourmands de bonbons fruités, mêlan
     box.remove();
     return done;
   }
-  async function submitOrder(ev) {
+  function openWhatsAppOrder(url) {
+    // La page GitHub et la Mini App Telegram peuvent ouvrir un lien https://wa.me.
+    // WhatsApp n'envoie jamais automatiquement le message : le client confirme l'envoi.
+    if (tg && tg.platform !== "unknown" && typeof tg.openLink === "function") {
+      try {
+        tg.openLink(url);
+        return;
+      } catch (error) {
+        console.warn("Ouverture WhatsApp via Telegram impossible :", error);
+      }
+    }
+    // Ouverture immédiate sur le clic utilisateur, pour éviter les bloqueurs de pop-ups.
+    const win = window.open(url, "_blank");
+    if (win) {
+      try { win.opener = null; } catch (_) {}
+    } else {
+      // Alternative si l'ouverture d'une nouvelle fenêtre est bloquée.
+      window.location.assign(url);
+    }
+  }
+  function submitOrder(ev) {
     ev.preventDefault();
     checkoutValues();
     const c = state.checkout;
@@ -1447,29 +1458,16 @@ La Zkittlez est réputée pour ses arômes gourmands de bonbons fruités, mêlan
       return toast("Indique une adresse complète");
     const order = makeOrderPayload();
     if (!order.items.length) return toast("Panier vide");
-    const msg = JSON.stringify(order);
-    if (canSendToTelegram()) {
-      if (new TextEncoder().encode(msg).length > 3900) {
-        toast(
-          "Demande trop longue : réduis le nombre de produits ou tes notes.",
-        );
-        return;
-      }
-      try {
-        tg.sendData(
-          msg,
-        ); /* Telegram ferme la Mini App ; seule la réponse du bot confirme la réception. */
-      } catch (e) {
-        toast("Envoi non disponible ; copie le récapitulatif à la place.");
-      }
-    } else {
-      const ok = await copyText(makeOrderText(order));
-      toast(
-        ok
-          ? "Demande copiée : colle-la dans la conversation du commerçant."
-          : "Copie impossible. Ouvre la boutique depuis le bouton du bot Telegram.",
-      );
+    const message = makeOrderText(order);
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    const fallback = $("#whatsapp-fallback");
+    if (fallback) {
+      fallback.href = whatsappUrl;
+      fallback.hidden = false;
     }
+    openWhatsAppOrder(whatsappUrl);
+    // On garde le panier tant que WhatsApp n'a pas confirmé un envoi.
+    toast("WhatsApp : vérifie le message puis appuie sur Envoyer.");
   }
   async function load() {
     state.loading = true;

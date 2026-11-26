@@ -5090,3 +5090,19 @@ html[data-region] .site-footer {
     animation: none !important;
   }
 }
+
+/* Demande WhatsApp : lien de secours, visible si l'application ne s'ouvre pas. */
+.whatsapp-fallback:not([hidden]) {
+  display: block;
+  margin-top: 12px;
+  padding: 11px 14px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 800;
+  color: #0c202a;
+  background: linear-gradient(110deg, #baf0d0, #e0fff0);
+  border: 1px solid rgba(37, 211, 102, .65);
+  border-radius: 12px;
+  text-decoration: none;
+}
+.whatsapp-fallback[hidden] { display: none !important; }
